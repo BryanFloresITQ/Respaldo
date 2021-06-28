@@ -50,14 +50,12 @@ router
 
                 const { query: {ids} } = req;
 
-                var ides = ids.split(",");
-
-                FiltrarIdes = await FetchData.getSpecificCharacters(ides)
-                resolve(FiltrarIdes);
+                var ides = ids.split`,`.map(x=>+x);
+                FiltrarIdes = await FetchData.getSpecificCharacters(ides);
 
                 res.json({
                     msg: "Personajes Filtrados por ID",
-                    body:[filtrarID]
+                    body:[FiltrarIdes]
                 })
         
             } catch (error) {
