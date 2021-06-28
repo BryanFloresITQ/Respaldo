@@ -1,0 +1,19 @@
+{
+    "name": "prueba_1_ntp",
+    "version": "1.0.0",
+    "description": "Evaluación primera semana",
+    "main": "index.js",
+    "scripts": {
+        "dev":  "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "Bryan Flores",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "0.21.1",
+        "express": "4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "2.0.7"
+    }
+}
